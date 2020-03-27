@@ -1,0 +1,52 @@
+/*Whole CSS*/
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    margin:0px;
+    background-color: grey;
+    font-family:Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+}
+/*Headings*/
+h1, h2{
+    margin:0px;
+    font-weight: 400;
+}
+
+h1.lg-heading{
+    font-size: 6rem;
+}
+h2.sm-heading{
+    margin-bottom:2rem;
+    padding: 0.2rem 1rem;
+    background-color:rgba(lightgray, 0.5);
+}
+/*Page and text styling*/
+a{
+  color: #fff;
+  text-decoration: none;  
+}
+header{
+    position: fixed;
+    z-index: 2;
+}
+.lastname{
+    color:greenyellow;
+}
+
+main{
+    padding: 4rem;
+    
+}
+main.icons{
+        margin-top:1rem;
+
+    }
+main > a{
+    padding: 0.4rem;
+}
+a:hover{
+    color: greenyellow;
+}
