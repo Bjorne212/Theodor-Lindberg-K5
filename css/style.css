@@ -6,10 +6,15 @@
 
 #home{
     display: true;
+    padding:4rem;
 }
 
 #work{
     display: none;
+    padding:0;
+    font-family:Verdana, Geneva, sans-serif;
+    height: 100%;
+    width:100%;
 }
 
 #projects{
@@ -196,9 +201,6 @@ header{
     color:greenyellow;
 }
 
-main{
-    padding:4rem;
-}
 .container{
     background-color: grey;
     opacity: 0.7;
@@ -208,6 +210,7 @@ main{
     top:0;
     left:0;
     z-index: -1;
+    
 }
 main.icons{
     margin-top:1rem;
@@ -227,9 +230,59 @@ main.icons{
     }   
     
 }
-body {
-    background-color: #474e5d;
-    font-family: Helvetica, sans-serif;
-  }
-  
+.timeline{
+    color:white;
+    position: relative;
+    margin:50px auto;
+    padding:0px 0;
+    width:100%;
+}
+.timeline:before{
+    content:'';
+    position: absolute;
+    left:5%;
+    width:2px;
+    height: 95%;
+    background: #c5c5c5;
+    margin-top:40px;
+}
+
+.timeline ul{
+    margin:0;
+    padding:0;
+}
+.timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+@media only screen and (min-width:700px){
+
+    .timeline{
+        width:90%;
+    }
+    .timeline ul li:nth-child(odd){
+        float: left;
+        text-align:right;
+        clear: both;
+    }
+    .timeline ul li:nth-child(even){
+        float: right;
+        text-align:left;
+        clear: both;
+    }
+    .timeline ul li{
+        width:50%;
+    }
+    .timeline:before{ 
+         content:'';
+    position: absolute;
+    left:5%;
+    width:2px;
+    height: 95%;
+    background: #c5c5c5;
+    }
+}
  
