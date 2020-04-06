@@ -1,7 +1,25 @@
+
 /*Whole CSS*/
 *{
     box-sizing: border-box;
 }
+
+#home{
+    display: true;
+}
+
+#work{
+    display: none;
+}
+
+#projects{
+    display:none;
+}
+
+#contacts{
+    display: none;
+}
+
 body{
     height: 100%;
     margin:0px;
@@ -93,12 +111,12 @@ body{
   
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
+    transition-duration: 0,7s;
 }
   
 .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
-    transition:  opacity 0.4s ease 0.4s;
+    transition: ease 0.4s;
 }
   
 .menu-wrap .menu {
@@ -115,7 +133,8 @@ body{
 }
   
 .menu-wrap .menu > div {
-    background: var(--overlay-color);
+    background-color:blue;
+    opacity: 0.6;
     border-radius: 50%;
     width: 200vw;
     height: 200vw;
@@ -132,7 +151,7 @@ body{
     max-width: 90vw;
     max-height: 100vh;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: 0.4s ease;
 }
   
 .menu-wrap .menu > div > div > ul > li {
@@ -161,6 +180,7 @@ h2.sm-heading{
     padding: 0.2rem 1rem;
     background-color:rgba(lightgray, 0.5);
 }
+
 /*Page and text styling*/
 a{
   color: #fff;
@@ -188,10 +208,20 @@ main{
     z-index: -1;
 }
 main.icons{
-        margin-top:1rem;
-    }
+    margin-top:1rem;
+}
 
 .icon-links:hover{
     color: greenyellow;
     transition: all 0.5s ease-out;
+}
+@media only screen and (max-width: 600px){
+    body{
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/background-image.jpg) no-repeat;
+    }
+
+    h1.lg-heading{
+        font-size: 3rem;
+    }   
+    
 }

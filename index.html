@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theodor Lindberg</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
 </head>
-<body>  
-    
+<body> 
+  <main> 
+    <div class="page" id="home">
    <header class="menu-btn">
     <div class="menu-wrap">
         <input type="checkbox" class="toggler">
@@ -16,10 +18,10 @@
           <div>
             <div>
               <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="work.html">Arbeten</a></li>
-                <li><a href="projects.html">Projekt</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="#" data-target="home" class="nav-link" onclick="home()">Hem</a></li>
+                <li><a href="#" data-target="work" class="nav-link" onclick="work()">Arbeten</a></li>
+                <li><a href="#" data-target="projects" class="nav-link" onclick="projects()">Projekt</a></li>
+                <li><a href="#" data-target="contact" class="nav-link" onclick="contact()">Kontakt</a></li>
               </ul>
             </div>
           </div>
@@ -28,7 +30,7 @@
     
   
    </header>  
-   <main id="home">
+  
      
        <h1 class="lg-heading">
            Theodor <span class="lastname">Lindberg</span> 
@@ -38,14 +40,30 @@
            Jack of All Trades but a Master of None
        </h2>
        <div class="icons">
-           <a href="" class="icon-links">Twitter</a>
-           <a href="" class="icon-links">LinkedIn</a>
-           <a href="" class="icon-links">Github</a>
-           <a href="" class="icon-links">Facebook</a>
+           <a href="https://twitter.com/explore" class="icon-links">Twitter</a>
+           <a href="https://se.linkedin.com/" class="icon-links">LinkedIn</a>
+           <a href="https://github.com/" class="icon-links">Github</a>
+           <a href="https://www.facebook.com/" class="icon-links">Facebook</a>
        </div>
     <div class="container">
-    </div>
-   </main>
+    </div> 
  </div>
+</div>
+</div>
+
+<div class="page" id="work">
+   <h1>work</h1>  
+</div>
+
+
+<div class="page" id="projects">
+   <h1>projkekt</h1> 
+</div>
+
+
+<div class="page" id="contact">
+   <h1>Kontakt</h1> 
+</div>
+</main>
 </body>
 </html>
